@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="54px" viewBox="0 0 54 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sound-(1)">
+            <g id="play">
+                <path d="M27,54 C41.912,54 54,41.912 54,27 C54,12.088 41.912,0 27,0 C12.088,0 0,12.088 0,27 C0,41.912 12.088,54 27,54 Z" id="Path" fill="#FFFFFF"></path>
+                <g id="Group" transform="translate(23.000000, 18.000000)" fill="#4A4A4A">
+                    <path d="M1.82076576e-13,0.9 C1.82076576e-13,-0.0370955693 0.726097042,-0.0669108031 1.22537666,0.15693963 C6.76370739,3.67105248 10.8050182,6.33279372 13.3493091,8.14216336 C13.5578107,8.290439 13.9296692,8.57139587 13.9529236,9 C13.976178,9.42860413 13.4815962,9.76376083 13.2762897,9.90976436 C10.7482253,11.7075945 6.7312543,14.3533783 1.22537666,17.8471158 C0.670039317,18.1963421 0.00925314512,17.8379261 1.89181938e-13,17.1 L1.82076576e-13,0.9 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

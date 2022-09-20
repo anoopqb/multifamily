@@ -1,0 +1,35 @@
+{
+  "name": "multifamily-basic-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 8213",
+    "build": "next build",
+    "start": "next start -p 8213",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@svgr/webpack": "^6.3.1",
+    "eslint": "8.22.0",
+    "eslint-config-next": "12.2.5",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
+    "sass": "^1.54.6"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "please-use-yarn"
+  }
+}

@@ -1,0 +1,53 @@
+.topBanner {
+  position: fixed;
+  padding: 40px 30px 60px 30px;
+  background-color: #55aec6;
+  top: 0px;
+  z-index: 9;
+  left: 0px;
+  width: 100%;
+  transform: translateY(0);
+  transition: 0.8s ease-out;
+
+  .slideBox {
+    width: 100%;
+    & div {
+      display: flex;
+    }
+
+    h3 {
+      font-size: 46px;
+      font-weight: 700;
+      color: $white;
+      margin: 0px;
+      @include respond-below(lg) {
+        font-size: 30px;
+      }
+      @include respond-below(md) {
+        font-size: 20px;
+      }
+    }
+    p {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.7;
+      color: $white;
+      margin: 0px;
+      @include respond-below(lg) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9;
+    cursor: pointer;
+  }
+}
+
+.hide {
+  transform: translateY(-100%);
+}

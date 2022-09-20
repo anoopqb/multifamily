@@ -1,0 +1,139 @@
+.sliderContainer {
+  width: 100%;
+  position: relative;
+
+  .slideWrap {
+    height: 70vh;
+    min-height: 420px;
+    width: 100%;
+    position: relative;
+    &:after {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      content: '';
+      height: 100%;
+      width: 100%;
+      background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.25) 0%,
+        rgba(0, 0, 0, 0.25) 100%
+      );
+      z-index: 1;
+    }
+
+    img {
+      display: block;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
+    .contentWrap {
+      height: 100%;
+      width: 100%;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+      flex-direction: column;
+      @include respond-below(md) {
+        align-items: flex-start;
+        padding: 40px 30px 40px 30px;
+      }
+
+      h1 {
+        font-size: 90px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $white;
+        margin: 0px;
+        padding-bottom: 0px;
+
+        @include respond-below(xl) {
+          font-size: 60px;
+        }
+        @include respond-below(md) {
+          font-size: 40px;
+        }
+      }
+      p {
+        color: $white;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        margin: 0px;
+        padding-bottom: 30px;
+        @include respond-below(md) {
+          font-size: 18px;
+        }
+      }
+
+      a {
+        background-color: #55aec6;
+        padding: 14px 25px 14px 25px;
+        color: $white;
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: 3.5px;
+        text-transform: uppercase;
+        @include respond-below(md) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .slickControls {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+
+    button {
+      font-size: 0px;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      -webkit-appearance: none;
+      border: 0px;
+      margin: 0px 10px;
+      cursor: pointer;
+    }
+
+    .slickPause {
+      background-image: url('/pause-icon.svg');
+      background-size: cover;
+      background-position: center;
+    }
+    .slickPlay {
+      background-image: url('/play-icon.svg');
+      background-size: cover;
+      background-position: center;
+      display: none;
+    }
+  }
+}
+
+.playActive {
+  .slickPlay {
+    display: none;
+  }
+}
+.pauseActive {
+  .slickPause {
+    display: none;
+  }
+  .slickPlay {
+    display: block !important;
+  }
+}

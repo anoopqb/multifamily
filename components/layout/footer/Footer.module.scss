@@ -1,0 +1,93 @@
+.footer {
+  background: $footerPrimary;
+  display: flex;
+  @include respond-below(lg){
+    flex-direction: column;
+  }
+}
+
+.footerLeft {
+//   padding: 60px 0;
+  width: 110px;
+  background: $footerSecondary;
+  display: flex;
+  justify-content: center;
+  @include respond-below(lg){
+    width: 100%;
+    padding: 15px 0 10px 0;
+  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include respond-below(lg){
+      flex-direction: row;
+    }
+  }
+  a{
+	  margin: 5px 0;
+    @include respond-below(lg){
+      margin: 0 5px;
+    }
+  }
+
+  svg {
+    width: 26px;
+    fill: #fff;
+  }
+}
+
+.footerRight {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 54px;
+  font-size: 16px;
+  flex: 1;
+  @include respond-below(lg){
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    font-size: 14px;
+  }
+}
+
+.footerAddress {
+  color: #fff;
+  letter-spacing: 2px;
+  width: 240px;
+  @include respond-below(lg){
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  a {
+    color: #fff;
+  }
+}
+
+.footerLogo{
+  width: 150px;
+  @include respond-below(md){
+    width: 130px;
+  }
+}
+
+.footerPrivacy {
+  margin-bottom: 13px;
+  text-transform: uppercase;
+
+  a {
+    color: #fff;
+  }
+}
+
+.footerLinks {
+  text-align: right;
+}
+
+.footerIcons {
+  a {
+    margin-left: 20px;
+    display: inline-block;
+  }
+}

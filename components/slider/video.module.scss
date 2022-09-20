@@ -1,0 +1,54 @@
+.videoControls {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+
+  button {
+    font-size: 0px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    border: 0px;
+    margin: 0px 10px;
+    cursor: pointer;
+  }
+
+  .pauseBtn {
+    background-image: url('/pause-icon.svg');
+    background-size: cover;
+    background-position: center;
+  }
+  .playBtn {
+    background-image: url('/play-icon.svg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+.playActive {
+  .playBtn {
+    display: none;
+  }
+}
+.pauseActive {
+  .pauseBtn {
+    display: none;
+  }
+  .playBtn {
+    display: block;
+  }
+}
+
+.muteActive {
+  background-image: url('/muted-icon.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.muteInactive {
+  background-image: url('/sound-icon.svg');
+  background-size: cover;
+  background-position: center;
+}
